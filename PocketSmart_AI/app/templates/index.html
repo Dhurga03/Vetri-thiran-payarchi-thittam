@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}
+PocketSmart AI - Home
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            AI • Budget • Recommendations
+        </div>
+
+
+        <h1>
+            Plan smarter.
+            <br>
+
+            <span>
+                Spend better.
+            </span>
+        </h1>
+
+
+        <p>
+
+            PocketSmart AI helps you plan your
+            home, parties and jewelry purchases
+            according to your budget.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="/register"
+                class="btn"
+            >
+                Get Started
+            </a>
+
+
+            <a
+                href="/login"
+                class="btn secondary"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <h2>
+        What can PocketSmart AI do?
+    </h2>
+
+
+    <div class="feature-grid">
+
+
+        <a
+            href="/planner/home"
+            class="feature-card"
+        >
+
+            <div class="feature-icon">
+                🏠
+            </div>
+
+            <h3>
+                Home Interior
+            </h3>
+
+            <p>
+                Plan furniture, lighting,
+                decor and other room requirements
+                within your budget.
+            </p>
+
+        </a>
+
+
+        <a
+            href="/planner/party"
+            class="feature-card"
+        >
+
+            <div class="feature-icon">
+                🎉
+            </div>
+
+            <h3>
+                Party Planner
+            </h3>
+
+            <p>
+                Divide your event budget between
+                food, venue, decoration and
+                entertainment.
+            </p>
+
+        </a>
+
+
+        <a
+            href="/planner/jewelry"
+            class="feature-card"
+        >
+
+            <div class="feature-icon">
+                💎
+            </div>
+
+            <h3>
+                Jewelry Planner
+            </h3>
+
+            <p>
+                Get jewelry suggestions based on
+                your occasion, style, budget and
+                optional outfit image.
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<section class="how-section">
+
+    <h2>
+        How PocketSmart AI Works
+    </h2>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <span>01</span>
+
+            <h3>
+                Enter Budget
+            </h3>
+
+            <p>
+                Tell PocketSmart AI how much
+                you want to spend.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>02</span>
+
+            <h3>
+                Add Preferences
+            </h3>
+
+            <p>
+                Provide your requirements,
+                occasion or room details.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>03</span>
+
+            <h3>
+                Get Recommendations
+            </h3>
+
+            <p>
+                Gemini generates a structured
+                budget-aware recommendation plan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

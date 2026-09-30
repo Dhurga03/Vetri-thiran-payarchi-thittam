@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register - PocketSmart AI
+{% endblock %}
+
+
+{% block content %}
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h1>
+            Create Account
+        </h1>
+
+        <p>
+            Start using PocketSmart AI.
+        </p>
+
+
+        <form
+            id="registerForm"
+            class="form"
+        >
+
+            <label>
+                Full Name
+            </label>
+
+            <input
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>
+                Email
+            </label>
+
+            <input
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+            <input
+                name="password"
+                type="password"
+                minlength="6"
+                placeholder="Minimum 6 characters"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Create Account
+            </button>
+
+
+            <div
+                id="message"
+                class="message"
+            ></div>
+
+        </form>
+
+
+        <p class="auth-link">
+
+            Already have an account?
+
+            <a href="/login">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

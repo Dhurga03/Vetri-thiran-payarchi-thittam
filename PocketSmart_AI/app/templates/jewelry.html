@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}
+Jewelry Budget Planner
+{% endblock %}
+
+
+{% block content %}
+
+<section class="planner-page">
+
+    <div class="planner-header">
+
+        <div class="planner-icon">
+            💎
+        </div>
+
+        <h1>
+            Jewelry Budget Planner
+        </h1>
+
+        <p>
+            Get jewelry ideas based on your
+            occasion, style and budget.
+            You can optionally upload an outfit image.
+        </p>
+
+    </div>
+
+
+    <form
+        id="jewelryForm"
+        class="planner-form"
+        enctype="multipart/form-data"
+    >
+
+        <label>
+            Jewelry Budget ₹
+        </label>
+
+        <input
+            name="budget"
+            type="number"
+            min="1"
+            placeholder="Example: 5000"
+            required
+        >
+
+
+        <label>
+            Occasion
+        </label>
+
+        <select
+            name="occasion"
+            required
+        >
+
+            <option value="">
+                Select occasion
+            </option>
+
+            <option>
+                Wedding
+            </option>
+
+            <option>
+                Engagement
+            </option>
+
+            <option>
+                Birthday
+            </option>
+
+            <option>
+                Party
+            </option>
+
+            <option>
+                College Event
+            </option>
+
+            <option>
+                Festival
+            </option>
+
+        </select>
+
+
+        <label>
+            Jewelry Style
+        </label>
+
+        <select name="style">
+
+            <option>
+                Elegant
+            </option>
+
+            <option>
+                Traditional
+            </option>
+
+            <option>
+                Minimal
+            </option>
+
+            <option>
+                Trendy
+            </option>
+
+            <option>
+                Statement
+            </option>
+
+        </select>
+
+
+        <label>
+            Outfit Color
+        </label>
+
+        <input
+            name="outfit_color"
+            type="text"
+            placeholder="Example: Lavender"
+        >
+
+
+        <label>
+            Additional Preferences
+        </label>
+
+        <textarea
+            name="notes"
+            placeholder="Example: Gold finish, lightweight earrings"
+        ></textarea>
+
+
+        <label class="upload-box">
+
+            Upload Outfit Image
+            <span>
+                Optional
+            </span>
+
+            <input
+                name="outfit_image"
+                type="file"
+                accept="image/*"
+            >
+
+        </label>
+
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Find Matching Jewelry
+        </button>
+
+    </form>
+
+
+    <div id="results"></div>
+
+</section>
+
+{% endblock %}

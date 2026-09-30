@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard - PocketSmart AI
+{% endblock %}
+
+
+{% block content %}
+
+<section class="dashboard">
+
+    <div id="dashboardContent">
+
+        <div class="loading">
+            Loading dashboard...
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-planners">
+
+        <a
+            href="/planner/home"
+            class="dashboard-card"
+        >
+
+            <span>
+                🏠
+            </span>
+
+            <h3>
+                Home Planner
+            </h3>
+
+            <p>
+                Plan your room.
+            </p>
+
+        </a>
+
+
+        <a
+            href="/planner/party"
+            class="dashboard-card"
+        >
+
+            <span>
+                🎉
+            </span>
+
+            <h3>
+                Party Planner
+            </h3>
+
+            <p>
+                Plan your event.
+            </p>
+
+        </a>
+
+
+        <a
+            href="/planner/jewelry"
+            class="dashboard-card"
+        >
+
+            <span>
+                💎
+            </span>
+
+            <h3>
+                Jewelry Planner
+            </h3>
+
+            <p>
+                Find matching jewelry.
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

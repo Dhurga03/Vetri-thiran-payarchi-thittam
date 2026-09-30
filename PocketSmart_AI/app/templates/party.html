@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}
+Party Budget Planner
+{% endblock %}
+
+
+{% block content %}
+
+<section class="planner-page">
+
+    <div class="planner-header">
+
+        <div class="planner-icon">
+            🎉
+        </div>
+
+        <h1>
+            Party Budget Planner
+        </h1>
+
+        <p>
+            Plan food, venue, decoration and
+            entertainment according to your budget.
+        </p>
+
+    </div>
+
+
+    <form
+        id="partyForm"
+        class="planner-form"
+    >
+
+        <label>
+            Total Budget ₹
+        </label>
+
+        <input
+            name="budget"
+            type="number"
+            min="1"
+            placeholder="Example: 50000"
+            required
+        >
+
+
+        <label>
+            Number of Guests
+        </label>
+
+        <input
+            name="guests"
+            type="number"
+            min="1"
+            placeholder="Example: 50"
+            required
+        >
+
+
+        <label>
+            Event Type
+        </label>
+
+        <select
+            name="event_type"
+            required
+        >
+
+            <option value="">
+                Select event
+            </option>
+
+            <option>
+                Birthday
+            </option>
+
+            <option>
+                Wedding
+            </option>
+
+            <option>
+                Engagement
+            </option>
+
+            <option>
+                College Event
+            </option>
+
+            <option>
+                Corporate Event
+            </option>
+
+            <option>
+                Family Function
+            </option>
+
+        </select>
+
+
+        <label>
+            Venue / City
+        </label>
+
+        <input
+            name="venue"
+            type="text"
+            placeholder="Example: Erode"
+        >
+
+
+        <label>
+            Preferences
+        </label>
+
+        <textarea
+            name="preferences"
+            placeholder="Example: Vegetarian food, simple decoration, music"
+        ></textarea>
+
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Plan My Party
+        </button>
+
+    </form>
+
+
+    <div id="results"></div>
+
+</section>
+
+{% endblock %}

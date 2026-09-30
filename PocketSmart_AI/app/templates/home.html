@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home Interior Planner
+{% endblock %}
+
+
+{% block content %}
+
+<section class="planner-page">
+
+    <div class="planner-header">
+
+        <div class="planner-icon">
+            🏠
+        </div>
+
+        <h1>
+            Home Interior Planner
+        </h1>
+
+        <p>
+            Tell us your room and budget.
+            PocketSmart AI will create a
+            practical recommendation plan.
+        </p>
+
+    </div>
+
+
+    <form
+        id="homeForm"
+        class="planner-form"
+    >
+
+        <label>
+            Total Budget ₹
+        </label>
+
+        <input
+            name="budget"
+            type="number"
+            min="1"
+            placeholder="Example: 50000"
+            required
+        >
+
+
+        <label>
+            Room Type
+        </label>
+
+        <select
+            name="room_type"
+            required
+        >
+
+            <option value="">
+                Select room
+            </option>
+
+            <option>
+                Living Room
+            </option>
+
+            <option>
+                Bedroom
+            </option>
+
+            <option>
+                Kitchen
+            </option>
+
+            <option>
+                Dining Room
+            </option>
+
+            <option>
+                Study Room
+            </option>
+
+        </select>
+
+
+        <label>
+            Interior Style
+        </label>
+
+        <select name="style">
+
+            <option>
+                Modern
+            </option>
+
+            <option>
+                Minimal
+            </option>
+
+            <option>
+                Traditional
+            </option>
+
+            <option>
+                Luxury
+            </option>
+
+            <option>
+                Boho
+            </option>
+
+        </select>
+
+
+        <label>
+            Required Items
+        </label>
+
+        <textarea
+            name="items"
+            placeholder="Example: 2 lights, 1 ceiling fan, 1 dining table"
+        ></textarea>
+
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Generate Recommendations
+        </button>
+
+    </form>
+
+
+    <div id="results"></div>
+
+</section>
+
+{% endblock %}
